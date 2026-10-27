@@ -70,3 +70,11 @@ export EDITOR=code
 
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
+export PATH="$(brew --prefix mysql-client)/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
+alias drush="drush8"
+export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
+export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
+alias claude='arch -arm64 zsh -c "source ~/.nvm/nvm.sh && nvm use 22 && command claude \"\$@\"" claude'
